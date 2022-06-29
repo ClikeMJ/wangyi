@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <title>收货地址</title>
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body style="background:#eee">
+
+<header class="aui-header-default aui-header-fixed ">
+    <a href="javascript:history.back()" class="aui-header-item">
+        <i class="aui-icon aui-icon-back"></i>
+    </a>
+    <div class="aui-header-center aui-header-center-clear">
+        <div class="aui-header-center-logo">
+            <div class="">收货地址</div>
+        </div>
+    </div>
+    <a href="#" class="aui-header-item-icon"   style="min-width:0">
+        <i class="aui-icon"></i>
+    </a>
+</header>
+
+<section class="aui-myOrder-content">
+    <div class="aui-Address-box">
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p>张三</p>
+            </div>
+            <div class="aui-Address-box-item-ft">
+                <p>155****4561</p>
+            </div>
+        </div>
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p>云南省昆明市 昆明理工大学</p>
+            </div>
+        </div>
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p><input type="checkbox" class="check goods-check goodsCheck" checked="checked" style="background-size: 17px 17px;"> <em style="padding-left:24px;">默认地址</em></p>
+            </div>
+            <div class="aui-Address-box-item-ft">
+                <p>删除</p>
+            </div>
+        </div>
+    </div>
+    <div class="aui-Address-box">
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p>程梦娇</p>
+            </div>
+            <div class="aui-Address-box-item-ft">
+                <p>136****7413</p>
+            </div>
+        </div>
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p>云南省昆明市 云南大学呈贡校区</p>
+            </div>
+        </div>
+        <div class="aui-Address-box-item">
+            <div class="aui-Address-box-item-bd">
+                <p><input type="checkbox" class="check goods-check goodsCheck"  style="background-size: 17px 17px;"> <em style="padding-left:24px;">默认地址</em></p>
+            </div>
+            <div class="aui-Address-box-item-ft">
+                <p>删除</p>
+            </div>
+        </div>
+    </div>
+    <div class="aui-out">
+        <a href="">新建收货地址</a>
+    </div>
+</section>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/aui.js"></script>
+<script type="text/javascript" >
+    /**
+     * Javascript API调用Tab
+     */
+    !function ($) {
+        var $tab = $('#J_Tab');
+
+        $tab.tab({
+            nav: '.tab-nav-item',
+            panel: '.tab-panel-item',
+            activeClass: 'tab-active'
+        });
+
+        $tab.find('.tab-nav-item').on('opened.yd-ui.tab', function (e) {
+            console.log('索引：%s - [%s]已经打开了', e.index, $(this).text());
+        });
+    }(jQuery);
+</script>
+
+</body>
+</html>
